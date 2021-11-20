@@ -16,8 +16,8 @@ searchInputEl.addEventListener('blur', function () {
 });
 
 
-const badgeEl = document.querySelector('header .badges');
-const toTopEl = document.querySelector('#to-top');
+const badgeEl = document.querySelector('header .badges')
+const toTopEl = document.querySelector('#to-top')
 
 
 window.addEventListener('scroll', _.throttle(function () {
@@ -29,6 +29,7 @@ window.addEventListener('scroll', _.throttle(function () {
       opacity: 0,
       display: 'none'
     });
+    //버튼 보이기!
     gsap.to(toTopEl, .2, {
       x: 0
     });
@@ -38,6 +39,7 @@ window.addEventListener('scroll', _.throttle(function () {
       opacity: 1,
       display: 'block'
     });
+    //버튼 숨기기!
     gsap.to(toTopEl, .2, {
       x: 100
     });
